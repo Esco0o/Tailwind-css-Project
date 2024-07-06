@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="images/ico.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>Tailwind Css</title>
+  </head>
+  <body>
+    <nav class="container mx-auto p-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <img
+            src="images/logo-light.png"
+            alt="logo tailwind light"
+            width="200px"
+          />
+        </div>
+        <div
+          class="hidden md:flex items-center space-x-6 font-medium text-slate-900"
+        >
+          <a href="" class="hover:text-orange-500">Protoflio</a>
+          <a href="" class="hover:text-orange-500">Contact</a>
+          <a href="" class="hover:text-orange-500">About</a>
+          <a href="" class="hover:text-orange-500">Social</a>
+          <a
+            href=""
+            class="py-2 px-6 rounded-full text-white bg-orange-500 hover:bg-slate-800"
+            >Call Me</a
+          >
+        </div>
+        <button class="md:hidden text-2xl" id="mobileBtn"><i class="fa-solid fa-bars"></i></button>
+      </div>
+
+      <div  id="mobileMenu" class="md:hidden mt-4 absolute hidden bg-gray-50 right-6 drop-shadow-lg border border-gray-300 py-8 font-bold left-6   ">
+        <div class="flex flex-col items-center space-y-4">
+             <a href="" class="hover:text-orange-500">Protoflio</a>
+            <a href="" class="hover:text-orange-500">Contact</a>
+            <a href="" class="hover:text-orange-500">About</a>
+            <a href="" class="hover:text-orange-500">Social</a>
+            <a
+              href=""
+              class="py-2 px-6 rounded-full text-white bg-orange-500 hover:bg-slate-800"
+              >Call Me</a
+            ></div>
+       
+    </div>
+    </nav>
+
+    <header id="hero">
+      <div
+        class="container flex flex-col-reverse justify-center md:flex-row space-x-6 p-6"
+      >
+        <div
+          class="text md:w-1/2 flex justify-center flex-col py-3 space-y-2 text-center md:text-left"
+        >
+          <h1 class="font-bold text-2xl md:text-5xl">
+            Rapidly build modern websites without ever leaving your HTML.
+          </h1>
+          <p class="py-1 md:py-3">
+            A utility-first CSS framework packed with classes like flex, pt-4,
+            text-center and rotate-90 that can be composed to build any design,
+            directly in your markup.
+          </p>
+          <a
+            href=""
+            class="py-2 px-6 rounded-full self-center md:self-start text-white bg-orange-500 hover:bg-slate-800"
+            >Get Started</a
+          >
+        </div>
+        <div class="img md:w-1/2">
+          <img
+            src="images/undraw_learning_sketching_nd4f.svg"
+            alt="undraw_learning_sketching"
+          />
+        </div>
+      </div>
+    </header>
+
+    <section id="author">
+      <div class="mx-auto text-center my-32 px-3 md:px-10">
+        <h2 class="font-bold text-2xl md:text-4xl mb-3">
+          "Best practise" dont actually work
+        </h2>
+        <p class="max-w-5xl mx-auto">
+          Lorem ipsum dolor sit amet , possimus quae excepturi molestiae
+          suscipit. Mollitia quia facilis eaque et ipsa, architecto officiis.
+        </p>
+
+        <div
+          class="mt-14 md:mt-20 flex flex-col md:flex-row space-x-0 md:space-x-7 px-4"
+        >
+          <div
+            class="bg-slate-100 md:w-1/3 flex flex-col items-center mb-12 rounded-lg space-y-1 p-6 border border-slate-200"
+          >
+            <img
+              src="images/adam.jpg"
+              class="w-16 rounded-full -mt-12"
+              alt="adam"
+            />
+            <h5 class="font-bold text-lg">Adam Robin</h5>
+            <p class="leading-5 text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptate ipsum pariatur sint dolore cumque placeat. Reiciendis
+              expedita nesciunt qui praesentium?
+            </p>
+          </div>
+
+          <div
+            class="bg-slate-100 md:w-1/3 flex flex-col mb-12 items-center rounded-lg space-y-1 p-6 border border-slate-200"
+          >
+            <img
+              src="images/marcel.jpg"
+              class="w-16 rounded-full -mt-12"
+              alt="adam"
+            />
+            <h5 class="font-bold text-lg">Marcil Adrian</h5>
+            <p class="leading-5 text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Voluptate ipsum pariatur adipisicing elit. Voluptate ipsum
+              pariatur sint dolore cumque placeat. Reiciendis expedita nesciunt
+              qui praesentium?
+            </p>
+          </div>
+
+          <div
+            class="bg-slate-100 md:w-1/3 flex flex-col mb-12 items-center rounded-lg space-y-1 p-6 border border-slate-200"
+          >
+            <img
+              src="images/madeline.jpg"
+              class="w-16 rounded-full -mt-12"
+              alt="adam"
+            />
+            <h5 class="font-bold text-lg">Madline Monoro</h5>
+            <p class="leading-5 text-sm">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. dolor,
+              sit amet consectetur adipisicing elit. Voluptate ipsum pariatur
+              sint dolore cumque placeat. Reiciendis expedita nesciunt qui
+              praesentium?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-orange-500 flex flex-col md:flex-row  py-5 items-center justify-around space-y-4 text-white">
+        <p class="font-bold text-2xl md:text-2xl">Move even faster with Tailwind UI</p>
+        <button class="bg-white rounded-full text-orange-500 font-bold px-4 py-2">Get Started</button>
+    </div>
+
+    <footer class="bg-slate-900">
+      <div class="container mx-auto font-medium flex flex-col-reverse  md:flex-row text-white py-10 px-9 space-y-8 md:space-y-0 justify-between "  >
+
+      
+
+        <div class="space-y-8 md:space-y-4 flex flex-col  items-center md:items-start">
+            <div class="block md:hidden my-5">
+                <p>Copyright <span class="text-orange-500">@copy</span>; 2023, All Right Reserved</p>
+            </div>
+            <img src="images/logo-dark.png" alt="logo-dark" class="h-8 rounded">
+            <div class="space-x-4">
+                <i class="fa-brands fa-facebook text-3xl"></i>
+                <i class="fa-brands fa-instagram text-3xl"></i>
+                <i class="fa-brands fa-twitter text-3xl"></i>
+                <i class="fa-brands fa-linkedin text-3xl"></i>
+                <i class="fa-brands fa-youtube text-3xl"></i>
+            </div>
+        </div>
+
+        <div class="flex justify-around space-x-32">
+            <div class=" flex flex-col space-y-2">
+                <a href="" class="hover:text-slate-400">Home</a>
+                <a href="" class="hover:text-slate-400">About</a>
+                <a href="" class="hover:text-slate-400">Contact</a>
+            </div>
+            <div class=" flex flex-col space-y-2">
+                <a href="" class="hover:text-slate-400">Imprint</a>
+                <a href="" class="hover:text-slate-400">Privacy</a>
+                <a href="" class="hover:text-slate-400">Credits</a>
+            </div>
+        </div>
+        <div class="flex flex-col justify-between items-center">
+            <form class="flex space-x-1">
+                <div class="flex space-x-2">
+                    <input type="text" name="" id="" placeholder="Subscribe to Newsletter" class="rounded-full py-2 px-7 ">
+                    <button class="rounded-full px-4 py-1 bg-orange-500 hover:bg-slate-800">Go</button>
+                </div>
+               
+            </form>
+            <div class="hidden md:block">
+                <p>Copyright <span class="text-orange-500">@copy</span>; 2023, All Right Reserved</p>
+            </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
